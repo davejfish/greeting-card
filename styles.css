@@ -78,13 +78,13 @@ h2 {
 .greetingCard {
     display: grid;
     grid-template-rows: 20% 40% 40%;
-    border: 5px solid #442220;
+    border: 5px dashed #442220;
     height: 185px;
     width: 265px;
 }
 
 .sectionOne {
-    background-color: #809848;
+    background-color: #39A2AE;
     width: 260px;
     height: 35px;
     display: flex;
@@ -96,14 +96,14 @@ h2 {
 .sectionTwo {
     display: flex;
     flex-direction: column;
-    background-color: #442220;
+    background-color: #453823;
     height: 74px;
 }
 
 .sectionThree {
     display: flex;
     flex-direction: column;
-    background-color: #809848;
+    background-color: #39A2AE;
     height: 72px;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@ h2 {
 .forest {
     background-color: #809848;
     font-family: 'Blaka', cursive;
-    font-size: .65rem;
+    font-size: 1rem;
 }
 
 .forestTwo {

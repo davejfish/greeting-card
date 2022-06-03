@@ -12,6 +12,8 @@ const cardImage = document.getElementById('cardImage');
 const userTheme = document.getElementById('theme');
 const greetingCard = document.getElementById('card');
 
+const exportImage = document.getElementById('exportImage');
+
 
 
 
@@ -35,4 +37,12 @@ pictureSelect.addEventListener('change', () => {
 userTheme.addEventListener('change', () => {
     greetingCard.classList.value = 'greetingCard';
     greetingCard.classList.add(userTheme.value);
+});
+
+exportImage.addEventListener('click', async() => {
+    const dataUrl = await domtoimage.toPng(greetingCard);
+    const link = document.createElement('a');
+    link.download = heading.value + '.png';
+    link.href = dataUrl;
+    link.click();
 });

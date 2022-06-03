@@ -34,6 +34,7 @@ userTheme.addEventListener('change', () => {
 });
 
 exportImage.addEventListener('click', async() => {
+    // eslint-disable-next-line no-undef
     const dataUrl = await domtoimage.toPng(greetingCard);
     const link = document.createElement('a');
     link.download = heading.value + '.png';

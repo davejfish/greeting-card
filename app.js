@@ -6,6 +6,10 @@ const cardHeading = document.getElementById('userText');
 const textArea = document.getElementById('userDescription');
 const cardDescription = document.getElementById('description');
 
+const pictureSelect = document.getElementById('picture');
+const cardImage = document.getElementById('cardImage');
+
+
 
 
 // set event listeners
@@ -19,4 +23,8 @@ heading.addEventListener('input', () => {
 
 textArea.addEventListener('input', () => {
     cardDescription.textContent = textArea.value;
+});
+
+pictureSelect.addEventListener('change', () => {
+    cardImage.src = pictureSelect.value;
 });

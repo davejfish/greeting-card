@@ -64,9 +64,23 @@ h2 {
 .greetingCard {
     display: flex;
     flex-direction: column;
-    background-color: red;
-    border: 5px solid blue;
+    background-color: #809848;
+    border: 5px solid #442220;
     height: 175px;
     width: 250px;
 }
 
+.forest {
+    background-color: #809848;
+    border: 5px solid #442220;
+}
+
+.river {
+    background-color: #39A2AE;
+    border: 5px dashed #453823;
+}
+
+.mountain {
+    background-color: #928C6F;
+    border: 5px double #EDEBA0;
+}

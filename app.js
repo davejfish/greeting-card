@@ -9,6 +9,9 @@ const cardDescription = document.getElementById('description');
 const pictureSelect = document.getElementById('picture');
 const cardImage = document.getElementById('cardImage');
 
+const userTheme = document.getElementById('theme');
+const greetingCard = document.getElementById('card');
+
 
 
 
@@ -27,4 +30,9 @@ textArea.addEventListener('input', () => {
 
 pictureSelect.addEventListener('change', () => {
     cardImage.src = pictureSelect.value;
+});
+
+userTheme.addEventListener('change', () => {
+    greetingCard.classList.value = 'greetingCard';
+    greetingCard.classList.add(userTheme.value);
 });

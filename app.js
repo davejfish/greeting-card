@@ -3,6 +3,9 @@
 const heading = document.getElementById('heading');
 const cardHeading = document.getElementById('userText');
 
+const textArea = document.getElementById('userDescription');
+const cardDescription = document.getElementById('description');
+
 
 
 // set event listeners
@@ -12,4 +15,8 @@ const cardHeading = document.getElementById('userText');
 
 heading.addEventListener('input', () => {
     cardHeading.textContent = heading.value;
+});
+
+textArea.addEventListener('input', () => {
+    cardDescription.textContent = textArea.value;
 });

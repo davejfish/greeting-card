@@ -58,7 +58,6 @@ span {
 img {
     width: 75px;
     align-self: center;
-    position:absolute;
 }
 
 button {
@@ -151,4 +150,8 @@ h2 {
 
 .dashedBorder {
     border: dashed 5px #453823;
+}
+
+.absolutePosition {
+    position: absolute;
 }

@@ -52,14 +52,13 @@ section {
 
 span {
     text-align: center;
-    margin-top: 10px;
-    padding: 5px;
+    align-self: center;
 }
 
 img {
     width: 75px;
     align-self: center;
-    margin-top: 10px;
+    position:absolute;
 }
 
 button {
@@ -77,24 +76,56 @@ h2 {
 }
 
 .greetingCard {
-    display: flex;
-    flex-direction: column;
-    background-color: #809848;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    /* background-color: #809848; */
     border: 5px solid #442220;
     height: 175px;
     width: 250px;
 }
 
+.sectionOne {
+    background-color: #809848;
+    width: 251px;
+    height: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    background-color: #442220;
+    height: 74px;
+}
+
+.sectionThree {
+    display: flex;
+    flex-direction: column;
+    background-color: #809848;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
 .forest {
     background-color: #809848;
-    border: 5px solid #442220;
     font-family: 'Blaka', cursive;
+}
+
+.forestTwo {
+    background-color: #442220;
 }
 
 .river {
     background-color: #39A2AE;
-    border: 5px dashed #453823;
     font-family: 'Indie Flower', cursive;
+}
+
+.riverTwo {
+    background-color: #453823;
 }
 
 .mountain {
@@ -103,9 +134,21 @@ h2 {
     font-family: 'Staatliches', cursive;
 }
 
+.mountainTwo {
+    background-color: #EDEBA0;
+}
+
 .game {
     background-color: #a7a4e0;
     border: 5px double #514689;
     font-family: 'Press Start 2P', cursive;
     font-size: .65rem;
+}
+
+.gameTwo {
+    background-color: #514689;
+}
+
+.dashedBorder {
+    border: dashed 5px #453823;
 }

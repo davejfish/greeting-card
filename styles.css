@@ -12,6 +12,12 @@ main {
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
 
 body {
     font-family: 'Hubballi', cursive;
@@ -34,6 +40,13 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 span {

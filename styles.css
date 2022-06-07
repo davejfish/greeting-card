@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Indie+Flower&family=Press+Start+2P&family=Staatliches&display=swap');
 
 :root {
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
 }
 
 body {
@@ -27,4 +41,124 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+img {
+    width: 75px;
+    align-self: center;
+}
+
+button {
+    margin-top: 10px;;
+}
+
+h2 {
+    text-align: center;
+}
+
+.userInputs {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.greetingCard {
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    border: 5px dashed #442220;
+    aspect-ratio: 16 / 9;
+    max-width: 384px;
+    max-height: 216px;
+}
+
+.sectionOne {
+    background-color: #39A2AE;
+    min-width: 385px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    background-color: #453823;
+    height: 100%;
+    width: 100%;
+}
+
+.sectionThree {
+    display: flex;
+    flex-direction: column;
+    background-color: #39A2AE;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.forest {
+    background-color: #809848;
+    font-family: 'Blaka', cursive;
+    font-size: 1rem;
+}
+
+.forestTwo {
+    background-color: #442220;
+}
+
+.river {
+    background-color: #39A2AE;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+}
+
+.riverTwo {
+    background-color: #453823;
+}
+
+.mountain {
+    background-color: #928C6F;
+    border: 5px double #EDEBA0;
+    font-family: 'Staatliches', cursive;
+    font-size: 1rem;
+}
+
+.mountainTwo {
+    background-color: #EDEBA0;
+}
+
+.game {
+    background-color: #a7a4e0;
+    border: 5px double #514689;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .65rem;
+}
+
+.gameTwo {
+    background-color: #514689;
+}
+
+.dashedBorder {
+    border: dashed 5px #453823;
+}
+
+.absolutePosition {
+    position: relative;
 }
